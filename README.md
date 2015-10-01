@@ -71,7 +71,11 @@
   * If you do not, install them now.  You can follow the guide above.  
 
 ####Mac OS X Installation
-  * Coming Soon
+1. Using PIP, we will install Django
+  * To Install Django, all we need to do is open a command prompt and type:
+    <pre>pip install django</pre>
+  * When finished, you can type:
+    <pre>django-admin --version</pre>
 
 ####Windows Installation
 1. Using PIP, we will install Django
