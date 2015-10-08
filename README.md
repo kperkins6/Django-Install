@@ -13,7 +13,9 @@
   * [Linux](#linuxInstall)  ( Coming Soon )
   * [Windows](#windowsInstall)  
 
-##Mac OS X Installation <a name="macInstall"></a>
+
+<a name="macInstall"></a>
+##Mac OS X Installation
 ####Installing Python
 1. Make sure **Xcode Command Line Tools** are installed  
   **Option 1** (takes up less space)  
@@ -66,7 +68,8 @@
 ######End of Mac Installation
 
 
-##Windows Installation <a name="windowsInstall"></a>
+<a name="windowsInstall"></a>
+##Windows Installation 
 ####Installing Python
 1. Downloading Python from the source
   * The first place we can go is Python's website.  Head to this link to grab the Windows MSI Installer:
@@ -123,7 +126,8 @@
 ######End of Windows Installation
 
 
-##Linux Installation <a name="linuxInstall"></a>
+<a name="linuxInstall"></a>
+##Linux Installation 
 ####Installing Python
   * Coming Soon
 
