@@ -10,7 +10,7 @@
 
 ####Please Select Your Operating system below:
   * [Mac OS X](#macInstall)  
-  * [Linux](#linuxInstall)  ( Work In Progress )
+  * [Linux](#linuxInstall)  
   * [Windows](#windowsInstall)  
 
 
