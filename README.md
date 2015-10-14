@@ -129,11 +129,52 @@
 <a name="linuxInstall"></a>
 ##Linux Installation 
 ####Installing Python
-  * Coming Soon
-
+ 1.The first step is to install python. Generally most linux OS have python 2.7 installed by default. To check if it exists, use the following command:
+  * python --version
+  * you may get an output similar to
+  * Python 2.7.6
+  * If not, then it can be downloaded from [HERE](https://www.python.org/)
+####Installing a Database system(SQLite)
+1. Since most of the web applications need a database and querying has to be done upon it, it's better to have a database setup on your system.
+  * SQLite is a database we can use, it is a light weight database and its good enough to begin with. For any simple web applications that you develop, you can use SQLite itself and later upgrade it to suit your needs. So, to install SQLite, use the following command:
+  * Please do note that in some linux systems SQLite is preinstalled along with python, in such cases, the above command can be ignored.
+  * sudo apt-get install sqlite
+####Installing pip and easy_install
+1. Any previous versions of Django if existing has to be removed. But if you have (pip) and (easy_install) for installation then you do not have to worry about removing the previous versions because this will be handled already.
+  * So, install both of them by using the command:
+  * sudo apt-get install python-setuptools
+  * The above command installs the required python setup tools along with easy_install. Most of the cases, "pip" is preinstalled. If in any case it isn't, install pip as given in the official documentations [HERE](https://pip.pypa.io/en/latest/installing/)
+2. Before proceeding, confirm that python, SQLite, pip and easy_install has been installed. To do so, use the commands one after another:
+  * python --version
+  * Output somthing similar to : Python 2.7.6
+  * sqlite -version
+  * Output somthing similar to : 2.8.27
+  * pip --version 
+  * Output somthing similar to : pip 7.1.2 from /usr/local/lib/python2.7/dist-packages (python 2.7)
+  * easy_install --version 
+  * Output somthing similar to : setuptools 18.3.2 from usr/local/lib/python2.7/dist-packages/setuptools-18.3.2-py2.7.egg (Python 2.7)
+  * If all appears good move on. If not troubleshoot.
+#### Installing a virtual enviornment
+1. In this step, we install a "Virtual Environment." After a lot of searching and testing, I found that Django can be run very easily on a virtual environment. A virtual environment is created to encapsulate all the data and resources required to run Django at one place so that all the changes made remain in that environment itself. Another important benefit of the virtual environment is that it supports the light weight web server provided by Django by default. This allows the installation and integration of apache server to be avoided.
+One of the easiest way to install virtual environment on linux is by using the "easy_install" command. This script comes with a package called python-setuptools which we have installed in a previous step. So now, we can install the environment using the following command:
+  * sudo easy_install virtualenv
+  * Be patient, as it may take some time depending on the speed of the internet
+#### Creating and setting up the virtual environment
+1. Now we create a folder using virtualenv so that the folder can act as the virtual environment to contain Django. Type the following command in the terminal:
+  * virtualenv --no-site-packages django-user
+2. Here django-user is the folder that will be created and used as the environment. It will be created under the directory you are currently in. Now to start the environment use the command:
+  * source django-user/bin/activate
+3. Now if you see your folder name
+  *(django-user)
+  * at the beginning of the prompt , it means that the environment is started.
+4. Navigate to the folder django-user using the command.
+  * cd django-user
+  * Upon listing the items in the folder using the "ls" command, you will be able to see directories like bin, lib, include, local. So what this virtual environment does is that any command or operation performed in the environment will not affect anything outside the environment. So the changes are isolated and this allows us to easily create as many environments as we want and test many things very easily.
 ####Installing Django
-  * Coming Soon
-
+1. The final step is installing Django within this environment that we have created in the previous step. Remember that you still have to be in the virtual environment in the django-user folder else django will be installed outside the environmant and cannot be used. To install Django use the command:
+  * easy_install django
+2. Thats it! Django is installed on your system with all required functionality for beginners to develop and learn the framework. Now you can go ahead and try out the DJANGO tutorial to learn the different functionalities and run your first web app. You can find the tutorial in the official Django documentation [HERE](https://docs.djangoproject.com/en/1.7/intro/tutorial01/#creating-a-project)
+3. 
 ####Starting up Django
 #####Before We Begin
   * Coming Soon
@@ -146,3 +187,4 @@
 2. Python Install : http://docs.python-guide.org/en/latest/starting/install/osx/
 3. Django Install Windows: https://docs.djangoproject.com/en/1.8/howto/windows/
 4. Cask by Homebrew : http://caskroom.io/
+5. Linux Django Install : https://www.howtoforge.com/tutorial/django-install-ubuntu-14.04/
