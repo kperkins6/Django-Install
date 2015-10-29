@@ -48,6 +48,8 @@
    and
    <pre>which pip</pre>
   * Congratulations, you now have Python!  
+  * Note: You can check the version of python by typing the following into your terminal window
+  <pre> python --version </pre>
 
 ####Installing Django
 #####Before We Begin
