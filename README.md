@@ -219,3 +219,4 @@
 3. Django Install Windows: https://docs.djangoproject.com/en/1.8/howto/windows/
 4. Cask by Homebrew : http://caskroom.io/
 5. Linux Django Install : https://www.howtoforge.com/tutorial/django-install-ubuntu-14.04/
+6. More info on Linux Django Env Setup : https://dev.to/achiengcindy/-how-to-set-up-django-environment-in-linux-for-beginners-35am
